@@ -20,7 +20,7 @@ Controls which auth shape the integration should use.
 
 Allowed values:
 - `hf_key`
-- `key_secret`
+- `api_key_secret`
 
 ### 2) `HIGGSFIELD_PROVIDER_HF_KEY`
 
@@ -57,7 +57,7 @@ Required:
 If missing:
 - return normalized error `AUTH_MISSING`
 
-### If `HIGGSFIELD_PROVIDER_AUTH_MODE = key_secret`
+### If `HIGGSFIELD_PROVIDER_AUTH_MODE = api_key_secret`
 Required:
 - `HIGGSFIELD_PROVIDER_API_KEY`
 - `HIGGSFIELD_PROVIDER_API_SECRET`

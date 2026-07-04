@@ -1,0 +1,39 @@
+{
+  "manifest_schema_version": 1,
+  "app_id": "imperal-higgsfield",
+  "name": "Imperal Higgsfield",
+  "version": "0.1.0",
+  "runtime": "python",
+  "entrypoint": "app.py",
+  "icon": "icon.svg",
+  "description": "Managed Higgsfield Cloud media generation extension for Imperal.",
+  "secrets": [
+    {
+      "name": "HIGGSFIELD_PROVIDER_AUTH_MODE",
+      "required": true,
+      "description": "Auth mode: hf_key or api_key_secret"
+    },
+    {
+      "name": "HIGGSFIELD_PROVIDER_HF_KEY",
+      "required": false,
+      "description": "Combined Higgsfield bearer key when hf_key mode is used"
+    },
+    {
+      "name": "HIGGSFIELD_PROVIDER_API_KEY",
+      "required": false,
+      "description": "Provider API key for api_key_secret mode"
+    },
+    {
+      "name": "HIGGSFIELD_PROVIDER_API_SECRET",
+      "required": false,
+      "description": "Provider API secret for api_key_secret mode"
+    }
+  ],
+  "tools": [
+    {"name": "hf_generate_image"},
+    {"name": "hf_generate_video"},
+    {"name": "hf_get_request_status"},
+    {"name": "hf_cancel_request"},
+    {"name": "hf_list_models"}
+  ]
+}
