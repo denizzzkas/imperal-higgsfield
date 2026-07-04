@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from imperal_sdk import ChatExtension, Extension, secret, tool  # type: ignore
+from imperal_sdk import ChatExtension, Extension, tool  # type: ignore
 
 from handlers.cancel_request import handle_cancel_request
 from handlers.generate_image import handle_generate_image
@@ -26,27 +26,6 @@ chat_extension = ChatExtension(
     app_id="imperal-higgsfield",
     name="Imperal Higgsfield",
     description="Managed Higgsfield Cloud image and video generation for Imperal.",
-)
-
-HIGGSFIELD_PROVIDER_AUTH_MODE = secret(
-    "HIGGSFIELD_PROVIDER_AUTH_MODE",
-    description="Auth mode: hf_key or api_key_secret",
-    required=True,
-)
-HIGGSFIELD_PROVIDER_HF_KEY = secret(
-    "HIGGSFIELD_PROVIDER_HF_KEY",
-    description="Combined Higgsfield bearer key when hf_key mode is used",
-    required=False,
-)
-HIGGSFIELD_PROVIDER_API_KEY = secret(
-    "HIGGSFIELD_PROVIDER_API_KEY",
-    description="Provider API key for api_key_secret mode",
-    required=False,
-)
-HIGGSFIELD_PROVIDER_API_SECRET = secret(
-    "HIGGSFIELD_PROVIDER_API_SECRET",
-    description="Provider API secret for api_key_secret mode",
-    required=False,
 )
 
 
