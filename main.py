@@ -1,10 +1,6 @@
 from __future__ import annotations
 
-try:
-    from imperal import ChatExtension, Extension, secret, tool  # type: ignore
-except ImportError:
-    from imperal import ChatExtension, secret, tool  # type: ignore
-    Extension = None  # type: ignore
+from imperal_sdk import ChatExtension, Extension, secret, tool  # type: ignore
 
 from handlers.cancel_request import handle_cancel_request
 from handlers.generate_image import handle_generate_image
@@ -24,7 +20,7 @@ extension = Extension(
     app_id="imperal-higgsfield",
     name="Imperal Higgsfield",
     description="Managed Higgsfield Cloud image and video generation for Imperal.",
-) if Extension else None
+)
 
 chat_extension = ChatExtension(
     app_id="imperal-higgsfield",
