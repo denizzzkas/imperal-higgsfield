@@ -4,7 +4,7 @@
   "name": "Imperal Higgsfield",
   "version": "0.1.0",
   "runtime": "python",
-  "entrypoint": "app.py",
+  "entrypoint": "main.py",
   "icon": "icon.svg",
   "description": "Managed Higgsfield Cloud media generation extension for Imperal.",
   "secrets": [
