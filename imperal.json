@@ -3,7 +3,7 @@
   "app_id": "imperal-higgsfield",
   "name": "Imperal Higgsfield",
   "version": "0.1.0",
-  "sdk_version": "5.9.2",
+  "sdk_version": "5.9.3",
   "icon": "icon.svg",
   "description": "Managed Higgsfield Cloud media generation extension for Imperal.",
   "secrets": [
