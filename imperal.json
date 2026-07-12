@@ -1,6 +1,6 @@
 {
   "manifest_schema_version": 1,
-  "app_id": "imperal-higgsfield",
+  "app_id": "higgsfield-extension",
   "name": "Imperal Higgsfield",
   "version": "0.1.0",
   "sdk_version": "5.9.3",

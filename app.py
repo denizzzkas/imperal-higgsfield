@@ -19,7 +19,7 @@ from models.inputs import (
 
 
 ext = Extension(
-    app_id="imperal-higgsfield",
+    app_id="higgsfield-extension",
     version="0.1.0",
     display_name="Imperal Higgsfield",
     description="Managed Higgsfield Cloud media generation extension for Imperal.",
